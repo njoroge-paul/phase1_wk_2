@@ -1,53 +1,78 @@
-*{
+*, ::before, ::after{
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
+}
+
+html{
+    font-size: auto;
+}
+body {
+    font-size: 16px;
+    line-height: 1.42857143;
+    color: black;
+    background-color:burlywood;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 800;
+    font-style:normal;
+    font-size-adjust:none;
+}
+
+.centered {
+    background-color:grey;
+    width: 80%;
+    height: 90vh;
+    margin: 10vh;
+    padding: 3% 4%;
+    border-radius: 10px;
 
 }
-body{
-    background-color:;
-}
-.container{
+.centered h1{
     text-align: center;
-    background-color: darkseagreen;
-    height: 80vh;
-    margin-left: 200px;
-    margin-right: 200px;
-    border: 1px solid rgb(5, 71, 5);
+    margin-bottom: 1%;
 }
-h1{
-    font-weight: 900;
-    font-size: 40px;
-    color: ;
+.form-elements input, .add-item {
+    display: inline-block;
+    border: 3px solid #ccc;
+    border-radius: 6px
+
 }
-button{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    width: 150px;
-    height: 30px;
-    border-radius: 10px;
-    background-color: rgb(5, 71, 5);
-    color: white;
-    font-size: 15px;
-    font-weight: bold;
+.add-item, .edit, .delete {
     cursor: pointer;
-    transition: 2s ease;
-    border: 0px;
 }
-button:hover{
-    background-color: rgb(255, 255, 255);
-    color: rgb(5, 71, 5);
+.add-item{
+    color:aliceblue;
+    -webkit-text-fill-color: blue;
 }
-input{
-    padding: 20px;
-    width: 200px;
-    border: 0px;
+.edit{
+    margin-top: 1%;
+    color: cornflowerblue;
+
+}
+.delete{
+    color: red;
+}
+.clear{
+    color: red;
+}
+.toast {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 2rem;
     text-align: center;
+    width: 300px;
+    line-height: 2rem;
+    border-radius: 4px;
 }
-ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: rgb(255, 255, 255);
+
+.success {
+    background-color: #198754;
+    color: rgba(255, 255, 255, 0.8)
+}
+
+.danger {
+    background-color: #d9534f;
+    color: rgba(255, 255, 255, 0.8)
 }
