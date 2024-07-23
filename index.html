@@ -1,46 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shopping List</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
-    />
-  </head>
-
-  <body>
-    <section class="centered">
-      <h1>Shopping List</h1>
-      
-      <form class="shopping">
-        <div class="container">
-          <input type="text" id="item-input" placeholder="Enter item" required/>
-          <button type="submit" class="add-item" disabled>Add Item</button>
-        </div>
-      </form>
-
-      <div class="items">
-        <div class="list">
-          <article class="item-list">
-            <p class="item-title">Coffee</p>
-            <div class="button">
-              <button class="edit">
-                <i class="fas fa-edit"></i>
-              </button>
-              <button class="delete"><i class="fas fa-trash"></i></button>
-            </div>
-          </article>
-          <br />
-        </div>
-        <button type="button" class="clear">clear</button>
-      </div>
-
-      <ul id="shopping-list"></ul>
-    </section>
-
-    <script src="script.js"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shooping_list</title>
+    <link rel="stylesheet" href="styles.css ">
+</head>
+<body>
+    <h1>Shopping List</h1>
+    <input type="text" id="item" placeholder="Enter item">
+    <button id="btn">Add Item</button>
+    <ul id="list"></ul>
+   
+    <script src="index.js"></script>
+</body>
 </html>
